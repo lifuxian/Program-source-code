@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+	PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+			"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	<hibernate-mapping>
+		<class name="com.jinma.bean.Goods" table="ssh_goods"> 
+			<id name="id" column="id">
+				<generator class="native"></generator>
+			</id>
+			<property name="name" column="name" length="50" ></property>
+			<property name="type" column="type" length="50"></property>
+			<property name="price" column="price"></property>
+			<property name="num" column="num" type="int" length="10"></property>
+			<property name="createDate" column="create_date" type="date"></property>
+			<property name="total" column="total"></property>
+			<property name="description" column="description" length="50" ></property>
+		</class>
+	</hibernate-mapping>
